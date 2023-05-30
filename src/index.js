@@ -1,13 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import PageScrollTop from './component/PageScrollTop';
+import DigitalAgency from './home/DigitalAgency';
 import reportWebVitals from './reportWebVitals';
+import './index.scss';
+
+// <DigitalAgency />
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter basename={'/'}>
+      <PageScrollTop>
+        <Switch>
+          <Route path="/" component={DigitalAgency} />
+        </Switch>
+      </PageScrollTop>
+    </BrowserRouter>
   </React.StrictMode>
 );
 
