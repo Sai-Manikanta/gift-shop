@@ -1,8 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import PageScrollTop from './component/PageScrollTop';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+// import PageScrollTop from './component/PageScrollTop';
 import DigitalAgency from './home/DigitalAgency';
+import Contact from "./elements/Contact";
+import ServiceDetails from "./elements/ServiceDetails";
 import reportWebVitals from './reportWebVitals';
 import './index.scss';
 
@@ -12,11 +14,14 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter basename={'/'}>
-      <PageScrollTop>
-        <Switch>
-          <Route path="/" component={DigitalAgency} />
-        </Switch>
-      </PageScrollTop>
+      {/* <PageScrollTop> */}
+      <Routes>
+        <Route path="/" element={<DigitalAgency />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/whygiftnblessings" element={<ServiceDetails />} />
+
+      </Routes>
+      {/* </PageScrollTop> */}
     </BrowserRouter>
   </React.StrictMode>
 );

@@ -98,38 +98,7 @@ class DigitalAgency extends Component {
                         <ServiceList item="6" column="col-lg-4 col-md-6 col-sm-6 col-12 text-center" />
                     </div>
                 </div>
-                {/* End Service Area  */}
-
-                {/* Start Portfolio Area */}
-                {/* bg_image bg_image--3 */}
-                <div className="portfolio-area ptb--120" style={{ backgroundColor: '#f1f1f1' }}>
-                    <div className="portfolio-sacousel-inner">
-                        <div className="container">
-                            <div className="row">
-                                <div className="col-lg-12">
-                                    <div className="section-title text-center service-style--3 mb--15">
-                                        <h2 className="title">Our Project</h2>
-                                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="row">
-                                <PortfolioList styevariation="text-center mt--40" column="col-lg-4 col-md-6 col-sm-6 col-12" item="6" />
-                            </div>
-                            <div className="row">
-                                <div className="col-lg-12">
-                                    <div className="view-more-btn mt--60 text-center">
-                                        <a className="rn-button-style--2 btn-solid" href="/portfolio"><span>View More</span></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                {/* End Portfolio Area */}
-
-                {/* Start About Area */}
-                <div className="about-area ptb--120  bg_color--1">
+                <div className="about-area ptb--120  bg_color--1" style={{ backgroundColor: '#f6f6f6' }}>
                     <div className="about-wrapper">
                         <div className="container">
                             <div className="row row--35">
@@ -154,15 +123,6 @@ class DigitalAgency extends Component {
                     </div>
                 </div>
                 {/* End About Area */}
-
-                {/* Start Testimonial Area */}
-                <div className="rn-testimonial-area ptb--120 bg_color--5">
-                    <div className="container">
-                        <Testimonial />
-                    </div>
-                </div>
-                {/* End Testimonial Area */}
-
                 {/* Start Blog Area */}
                 <div className="rn-blog-area pt--120 pb--80 bg_color--1">
                     <div className="container">

@@ -141,9 +141,11 @@ font-family: 'Poppins', sans-serif;
 }
 
 
-@for $i from 1 through 36 {
+@for $i from 1 through 34 {
     .bg_image--#{$i} {
-        // background-image: url(/assets/images/bg/bg-image-#{$i}.jpg) !important;
+        // ../../images/bg/bg-image-5.jpg
+        // assets/images/bg/bg-image-#{$i}.jpg
+        background-image: url(../../images/bg/bg-image-#{$i}.jpg) !important;
     }
 }
 
@@ -158,6 +160,14 @@ font-family: 'Poppins', sans-serif;
 .bg_image-three {
     background-image: url(https://images.unsplash.com/photo-1580587771525-78b9dba3b914) !important;
 }
+
+.bg_image-gift {
+    background-image: url(https://images.unsplash.com/photo-1521478706270-f2e33c203d95?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80)
+}
+
+// .bg_image--5 {
+//     background-image: url(../../images/bg/bg-image-5.jpg)
+// }
 
 @for $i from 1 through 80 {
     .font--#{$i} {
