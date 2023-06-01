@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { FaTwitter, FaInstagram, FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 
 const SocialShare = [
@@ -20,6 +21,7 @@ const FooterTwo = () => {
                                     <img src="/assets/images/logo/logo.png" alt="Logo images" />
                                 </a>
                             </div>
+                            <Link to="/privacy-policy" style={{ color: '#fff', marginTop: '10px', diplay: 'block' }}>Privacy Policy</Link>
                         </div>
                     </div>
                     <div className="col-lg-4 col-md-6 col-sm-6 col-12">

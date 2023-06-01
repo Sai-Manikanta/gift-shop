@@ -5,6 +5,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import DigitalAgency from './home/DigitalAgency';
 import Contact from "./elements/Contact";
 import ServiceDetails from "./elements/ServiceDetails";
+import PrivacyPolicy from './elements/PrivacyPolicy';
 import reportWebVitals from './reportWebVitals';
 import './index.scss';
 
@@ -19,7 +20,7 @@ root.render(
         <Route path="/" element={<DigitalAgency />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/whygiftnblessings" element={<ServiceDetails />} />
-
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
       </Routes>
       {/* </PageScrollTop> */}
     </BrowserRouter>
